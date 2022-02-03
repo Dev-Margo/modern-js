@@ -1,27 +1,28 @@
-**2: Javascript Fundementals**
+# Javascript Fundementals
 
-    **Variables:**
-        "let" to declare a variable.
-            e.g "x = 'Hello';
+## Variables:
+> "let" to declare a variable.
++ e.g "x = 'Hello';
 
-            var is the older form of let with some differences
+> var is the older form of let with some differences
 
-            repeated declarations are illegal:
-                SyntaxError: 'message' has already been declared
+> repeated declarations are illegal: 
++ SyntaxError: 'message' has already been declared
         
-            Naming:
-                Names can only have letters, digits, or $ and _
-                Use camel case
-                cant start with digits
-                cant have hyphens in variable Names
-                case matters 
-                use strict makes declarations without let illegal (i.e. python)
+### Naming:
++ Names can only have letters, digits, or $ and _
++ Use camel case
++ cant start with digits
++ cant have hyphens in variable Names
++ case matters 
++ use strict makes declarations without let illegal (i.e. python)
         
-        Constants use "const"
-            consts cant be reassigned
+### Constants use "const"
++ consts cant be reassigned
 
-    **Data Types:**
-        Javascript is dynamically typed - a variable can contain any datatype
+## Data Types:
+> Javascript is dynamically typed - a variable can contain any datatype
+
         Number: 
             contains both ints and floats
             Also contains Infinity, -Infinity, and NaN 
@@ -55,7 +56,7 @@
         typeof operator:
             returns the type of the argument
 
-    **Interactions: alert, prompt, confirm**
+## Interactions: alert, prompt, confirm
         alert:
             modal, steals focus from the windows
 
