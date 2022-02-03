@@ -55,5 +55,19 @@
         typeof operator:
             returns the type of the argument
 
+    Interactions: alert, prompt, confirm
+        alert:
+            modal, steals focus from the windows
+
+        prompt:
+            shows a modal window with a message, an input field, and the OK and cancel button
+            takes two args:
+                result = prompt(title, [default]);
+                //square brackets mean the argument is optional
         
+        confirm:
+            shows a modal window with a question and two buttons, ok and cancel
+                returns true if OK, false otherwise
+                let isBoss = confirm("Are you the boss?");
+            
 
