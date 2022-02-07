@@ -1,7 +1,7 @@
 # Javascript Fundementals
 ## Variables:
 - "let" to declare a variable.
-- e.g "x = 'Hello';
+- e.g `"x = 'Hello';`
 - var is the older form of let with some differences
 - repeated declarations are illegal: 
 - SyntaxError: 'message' has already been declared
@@ -32,8 +32,10 @@
 - surrounded by quotes "", '', or ``  
 - Backticks are extended functionality quotes  
 - They let you embed things in strings (like format strings)  
-- // embed a variable  
-- alert( `Hello, ${name}!` ); // Hello, John!  
+```
+// embed a variable  
+alert( `Hello, ${name}!` ); // Hello, John!  
+```
 - No Char type
 
 ### Boolean:
@@ -48,33 +50,37 @@
 ### objects and symbols:
 - mentioned later
         
-## typeof operator:
+### typeof operator:
 - returns the type of the argument
 
 ## Interactions: alert, prompt, confirm
-        alert:
-            modal, steals focus from the windows
+alert:  
+- modal, steals focus from the windows
 
-        prompt:
-            shows a modal window with a message, an input field, and the OK and cancel button
-            takes two args:
-                result = prompt(title, [default]);
-                //square brackets mean the argument is optional
+prompt:  
+- shows a modal window with a message, an input field, and the OK and cancel button
+- takes two args:  
+```
+result = prompt(title, [default]);
+//square brackets mean the argument is optional 
+```
         
-        confirm:
-            shows a modal window with a question and two buttons, ok and cancel
-                returns true if OK, false otherwise
-                let isBoss = confirm("Are you the boss?");
+confirm:  
+- shows a modal window with a question and two buttons, ok and cancel
+- returns true if OK, false otherwise  
+`let isBoss = confirm("Are you the boss?");`
             
 ## Type Conversions
 > Most of the time operators and functions automatically convert to the values given to them
 
 ### String Conversion
 > Sting(value) for explicit conversion
-> let value = true;  
-> alert(typeof value); // boolean  
-> value = String(value); // now value is a string "true"  
-> alert(typeof value); // string  
+let value = true;  
+```
+alert(typeof value); // boolean  
+value = String(value); // now value is a string "true"  
+alert(typeof value); // string  
+```
 
 ### Numeric Conversion
 > We can user Number(value) function to convert a value to a number
@@ -110,32 +116,40 @@ The following math operations are supported:
 - calculations are done first then assignment is run
 ### Chained assignments
 - evaluate from left to right
-- a = b = c = 2+2;
+- `a = b = c = 2+2;`
 - is the same as 
-    > c = 2+2;
-    > b = c;
-    > a = c;
+```
+c = 2+2;
+b = c;
+a = c;
+```
 
-### increment and decrement
+### Increment and decrement
 - ++ and --
 - prefix form:
-    > let counter = 1;  
-    > let a = ++counter;  
-    > alert(a); //returns 2  
-    > *increment and return*
+```
+let counter = 1;  
+let a = ++counter;  
+alert(a); //returns 2  
+//*increment and return*
+```
 - postfix form
-    > let counter = 1;  
-    > let a = counter++;  
-    > alert(a); //returns 1
-    > alert(counter) //returns 2  
-    > *increment but do NOT return value*
+```
+let counter = 1;  
+let a = counter++;  
+alert(a); //returns 1
+alert(counter) //returns 2  
+*increment but do NOT return value*
+```
 ### comma
 > The comma operator , is one of the rarest and most unusual operators. Sometimes, it’s used to write shorter 
 > code, so we need to know it in order to understand what’s going on.
 > The comma operator allows us to evaluate several expressions, dividing them with a comma ,. Each of them is  > evaluated but only the result of the last one is returned.  
-> ex:  for (a = 1, b = 3, c = a * b; a < 10; a++) {}
+> ex:  `for (a = 1, b = 3, c = a * b; a < 10; a++) {};`
 
 ### bitwise 
-supported as usual see references 
+ - supported as usual see references 
+
+
 
 
