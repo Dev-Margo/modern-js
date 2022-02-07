@@ -148,8 +148,15 @@ alert(counter) //returns 2
 > ex:  `for (a = 1, b = 3, c = a * b; a < 10; a++) {};`
 
 ### bitwise 
- - supported as usual see references 
+- supported as usual see references 
 
+## Comparisons
+Javascript comparisons: 
+- Greater lesser: ` > < >= <= `  
+- Equals ` == ` (equality test)  
+- Not Equals ` != `  
+- Returns bool
 
-
-
+### Strong Comparisons
+- Strings are compared letter by letter 
+ 
