@@ -157,6 +157,67 @@ Javascript comparisons:
 - Not Equals ` != `  
 - Returns bool
 
-### Strong Comparisons
-- Strings are compared letter by letter 
+### String Comparisons
+- Strings are compared letter by letter   
+- Uses unicode ordering not a real dictionary   
+
+### Strict Equality
+- == cant tell the diff between 0 and false  
+- use === for strict equality, this checks the type and returns false if they are diff types  
+
+### Null and undefined
+- for equality the are the same  
+- strict equality they are different   
+- math:   
+- null/undefined are converted to numbers: null becomes 0, while undefined becomes NaN.
+
+## Conditional Branching: if, '?'
+
+### if statements
+`if(...)`
+- if respects truthy and falsey conditions like if(0) and if(NaN) are false etc
+
+### else clause
+```
+if (...) {
+    else {...}
+}
+```
+
+### else if
+```
+if(...) {
+    else if (...){
+
+    }
+}
+```
+- final else is optional
+
+### conditional operator (ternary operator)
+`let result = condition ? val1 : val2;`
+- The condition is evaluated: if it’s truthy then value1 is returned, otherwise – value2.
+
+## logical operators
+- or ||, converts to boolean before eval  
+- stringing multiple 'or's together finds first truthy value left to right else return last value  
+- and &&, finds first falsy else return last operand
+- ! not
+
+## Nullish
+- ??
+- ?? returns the first argument if its not null/undef. Otherwise the second is returned  
+`a ?? b`
+- nullish coalescence finds first non null/undef arg  
+- ex: 
+```
+let user;
+
+alert(user ?? "Anonymous"); // Anonymous (user not defined)
+```
+- same precedence as || because they can be used the same way
+- will throw a syntax error when used with && or || unless you specify the precedence of the logical operands
+
+
+
  
